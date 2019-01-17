@@ -12,6 +12,7 @@ public class calc{
 		
 		System.out.print("1. ADD TWO NUMBERS\n");
 		System.out.print("2. EXIT\n");
+		System.out.print("3. Sub\n");
 		System.out.print("Enter Your Choice : ");
 		choice = scan.next().charAt(0);	
 
@@ -25,6 +26,13 @@ public class calc{
 				   break;
 			
 			case '2' : System.exit(0);
+				   break;
+
+			case '3' : System.out.print("Enter Two Number : ");
+				   a = scan.nextFloat();
+				   b = scan.nextFloat();
+				   res = a-b;
+				   System.out.print("Result = "+res+"\n");	
 				   break;
 		
 			default : System.out.print("INVALID CHOICE!!!");
